@@ -1,0 +1,23 @@
+CREATE TABLE stage (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    Business TEXT,
+    Title TEXT,
+    FirstName TEXT,
+    LastName TEXT,
+    DateOfBirth TEXT,
+    AddressLine1 TEXT,
+    AddressLine2 TEXT,
+    Suburb TEXT,
+    City TEXT,
+    PostCode TEXT,
+    HomeNumber TEXT,
+    FaxNumber TEXT,
+    WorkNumber TEXT,
+    MobileNumber TEXT,
+    OtherNumber TEXT,
+    Notes TEXT,
+    FileName VARCHAR(500),
+    DateCreation TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    IsProcessed BOOL DEFAULT FALSE,
+    PRIMARY KEY (id)
+);
